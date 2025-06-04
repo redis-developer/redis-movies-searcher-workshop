@@ -28,10 +28,10 @@ Please use IDEs like [VS Code](https://code.visualstudio.com), [IntelliJ IDEA](h
 
 #### ⏰ Estimated time: **20 minutes**
 
-Your first step is cloning the repository and building the application. Make sure to clone the repository with the branch `jnation-2025-workshop`:
+Your first step is cloning the repository and building the application.
 
 ```bash
-git clone https://github.com/redis-developer/redis-movies-searcher.git -b jnation-2025-workshop
+git clone https://github.com/redis-developer/redis-movies-searcher-workshop.git
 ```
 
 Once you have a copy of the repository locally, you can open it in your favorite IDE. The project is a standard Maven project, so you can import it as a Maven project. Go ahead and run a Maven build so the dependencies are downloaded and you can verify if everything is working as expected. Please note that depending of the internet connection, this may take a while to complete.

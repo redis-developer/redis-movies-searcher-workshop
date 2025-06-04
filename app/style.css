@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+.container {
+    display: flex;
+    width: 850px;
+    gap: 70px;
+    padding: 60px 40px;
+    background: #fff;
+    border-radius: 10px;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#results-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#results-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.redis-logo img {
+    width: 250px;
+    height: auto;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #333;
+    margin: 15px 0;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#search-box {
+    width: 27%;
+    max-width: 1200px;
+    padding: 10px;
+    font-size: 16px;
+    height: 48px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    text-indent: 2em;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"><text y="20" font-size="20">🔍</text></svg>') no-repeat 10px center;
+    background-size: 20px 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#results-table th {
+    background-color: red; /* Change to your desired color */
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.webp">
+    <link rel="icon" type="image/webp" sizes="32x32" href="images/favicon-32x32.webp">
+    <link rel="icon" type="image/webp" sizes="16x16" href="images/favicon-16x16.webp">
+    <title>Redis Movies Searcher</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/apis.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+<div class="main-container" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+    <div class="search-wrapper" style="position: relative; width: 100%;">
+        <div class="search-container"
+             style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 40px; width: 100%; margin-top: -320px;">
+            <div class="redis-logo">
+                <img src="images/redis.png" alt="Redis Logo">
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 10px; width: 100%;">
+                <input type="text" id="search-box" class="textbox" placeholder=""
+                       style="width: 27%; max-width: 1200px; padding: 10px; font-size: 16px; height: 48px; border-radius: 15px; border: 1px solid #ccc;">
+            </div>
+        </div>
+        <div class="search-results" style="margin-top: -100px; width: 80%; max-width: 1200px; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);">
+            <table id="results-table" style="width: 100%; border-collapse: collapse; text-align: left;">
+                <thead>
+                <tr>
+                    <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2; text-align: center;width: 10%;">Year</th>
+                    <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2; width: 15%;">Title</th>
+                    <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2; width: 50%;">Plot</th>
+                    <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2; width: 15%;">Actors</th>
+                    <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;text-align: center; width: 10%;">Rating</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Search results will be dynamically added here -->
+                </tbody>
+            </table>
+            <div id="time-taken" style="margin-top: 10px; font-size: 13px; color: #555; text-align: right; width: 99%;"></div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2025 Redis Movies Searcher. All rights reserved.</p>
+</footer>
+</body>
+</html>

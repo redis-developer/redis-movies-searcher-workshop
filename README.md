@@ -52,6 +52,8 @@ Now execute the application with the following command:
 mvn spring-boot:run
 ```
 
+Be aware that the application will take some time to start by the first time. This is particularly true if you are using a poor internet connection. The application will download the required embeddings models.
+
 The application will start on port `8080`. You can access it by opening your browser and navigating to:
 
 http://localhost:8080/redis-movies-searcher
@@ -748,7 +750,7 @@ Note that we only execute the VSS search whenever the FTS search does not return
 
 ![vss-search.png](images/vss-search.png)
 
-### Task 3: Optimizing the Vector Similarity Search
+### Task 3: Implementing Semantic Caching
 
 #### ⏰ Estimated time: **15 minutes**
 
